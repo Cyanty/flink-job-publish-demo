@@ -946,7 +946,7 @@ public class YarnClusterDescriptor implements ClusterDescriptor<ApplicationId> {
             }
         }
 
-        System.out.println("classPathBuilder: " + classPathBuilder);
+        //System.out.println("classPathBuilder: " + classPathBuilder);
 
         // To support Yarn Secure Integration Test Scenario
         // In Integration test setup, the Yarn containers created by YarnMiniCluster does not have

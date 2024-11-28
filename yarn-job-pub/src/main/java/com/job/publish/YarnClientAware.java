@@ -9,7 +9,7 @@ public interface YarnClientAware {
     void doSubmit();
 
     /**
-     * 仅支持单作业名(作业名唯一)的任务取消
+     * 仅支持单作业名(作业名唯一)的任务取消，避免多个同名任务取消的情况
      */
     void doCancel();
 

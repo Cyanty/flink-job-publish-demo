@@ -18,6 +18,19 @@ import java.util.Objects;
  * @description: 创建客户端，建议将flink安装包下的 lib/(包含flink-dist*.jar)和plugins/文件夹 上传到hdfs，作为依赖的文件夹引用
  */
 public class YarnClientFactory {
+    /**
+     *
+     * @param publishType  flink on yarn任务提交类型
+     * @param localUserJar  本地jar包路径
+     * @param localUserJarLib  本地jar包依赖lib/路径
+     * @param hdfsUserJar  hdfs上传jar包路径
+     * @param hdfsUserJarLib  hdfs上传jar包依赖lib/路径
+     * @param flinkDistJarPath  flink-dist_*.jar文件路径
+     * @param applicationName  任务名称
+     * @param entryPointClassName  任务运行主类
+     * @return  提交任务客户端
+     * @throws IOException
+     */
     public static YarnClientAware getYarnClient(String publishType,
                                                 String localUserJar,
                                                 String localUserJarLib,
